@@ -31,9 +31,7 @@ public class SysDNA extends JFrame {
 		contentPane.setLayout(null);
 		setContentPane(contentPane);
 
-		// =========================
-		// MENU LATERAL
-		// =========================
+
 		JPanel menu = new JPanel();
 		menu.setBackground(new Color(33, 27, 56));
 		menu.setBounds(0, 0, 325, 861);
@@ -66,20 +64,15 @@ public class SysDNA extends JFrame {
 		btnNovaAmostra.setBounds(10, 280, 299, 37);
 		menu.add(btnNovaAmostra);
 
-		// =========================
-		// ÁREA DE CONTEÚDO
-		// =========================
+
 		contentPanel = new JPanel();
 		contentPanel.setLayout(new BorderLayout());
 		contentPanel.setBounds(325, 0, 1275, 900);
 		contentPane.add(contentPanel);
 
-		// COMEÇA NA HOME
 		trocarTela(homeCache);
 
-		// =========================
-		// AÇÕES DOS BOTÕES
-		// =========================
+
 
 		btnInicio.addActionListener(e -> trocarTela(homeCache));
 
@@ -95,9 +88,7 @@ public class SysDNA extends JFrame {
 		});
 	}
 
-	// =========================
-	// TROCA DE TELAS
-	// =========================
+
 	private void trocarTela(JPanel tela) {
 		contentPanel.removeAll();
 		contentPanel.add(tela, BorderLayout.CENTER);
