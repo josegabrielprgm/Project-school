@@ -31,18 +31,17 @@ public class Home {
 
         Color corTexto = new Color(143, 170, 202);
 
-        // ===== TÍTULO =====
+
         JLabel titulo = new JLabel("Bem-Vindo ao DNA Analyzer");
         titulo.setHorizontalAlignment(SwingConstants.CENTER);
         titulo.setFont(new Font("Segoe UI", Font.BOLD, 40));
         titulo.setForeground(corTexto);
 
-        // ===== SUBTÍTULO =====
+
         JLabel subtitulo = new JLabel("Selecione uma das opções ao lado para começar");
         subtitulo.setHorizontalAlignment(SwingConstants.CENTER);
         subtitulo.setFont(new Font("Segoe UI", Font.BOLD, 20));
 
-        // 🔥 VISIBILIDADE CORRIGIDA
         subtitulo.setOpaque(true);
         subtitulo.setBackground(new Color(0, 0, 0, 120)); // fundo escuro transparente
         subtitulo.setForeground(Color.WHITE);
